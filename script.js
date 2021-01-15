@@ -21,20 +21,23 @@ const showMsg = function () {
   // });
 };
 
+// click buttons to popup the modal
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', showMsg);
 }
 
+// Show up the popup window when DOM loaded
+window.addEventListener('DOMContentLoaded', function (e) {
+  showMsg();
+});
+
+// 3 ways to close the popup
 btnCloseModal.addEventListener('click', hideMsg);
+
 ovrly.addEventListener('click', hideMsg);
 
-// Use this bloc of code or the code commented out bove
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
     hideMsg();
   }
-});
-
-window.addEventListener('DOMContentLoaded', function (e) {
-  showMsg();
 });

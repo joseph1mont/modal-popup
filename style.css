@@ -13,7 +13,7 @@ body {
   font-family: sans-serif;
   color: #333;
   line-height: 1.5;
-  height: 100vh;
+  height: 150vh;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -61,7 +61,7 @@ p {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
