@@ -34,3 +34,7 @@ document.addEventListener('keydown', function (e) {
     hideMsg();
   }
 });
+
+window.addEventListener('DOMContentLoaded', function (e) {
+  showMsg();
+});
