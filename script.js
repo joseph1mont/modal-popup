@@ -22,9 +22,13 @@ const showMsg = function () {
 };
 
 // click buttons to popup the modal
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener('click', showMsg);
-}
+
+// ES6
+btns.forEach(btn => btn.addEventListener('click', showMsg));
+
+// for (let i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener('click', showMsg);
+// }
 
 // Show up the popup window when DOM loaded
 window.addEventListener('DOMContentLoaded', function (e) {
